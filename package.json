@@ -1,0 +1,52 @@
+{
+  "name": "paste2md",
+  "version": "1.0.0",
+  "description": "Convert messy pasted HTML or web text into clean Markdown — right from your terminal.",
+  "main": "src/index.js",
+  "bin": {
+    "paste2md": "bin/paste2md.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "start": "node bin/paste2md.js",
+    "lint": "eslint src/ bin/ test/",
+    "lint:fix": "eslint src/ bin/ test/ --fix",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "converter",
+    "cli",
+    "gfm",
+    "paste",
+    "html-to-markdown",
+    "turndown"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "turndown": "^7.1.1",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lananh93159-boop/paste2md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lananh93159-boop/paste2md/issues"
+  },
+  "homepage": "https://github.com/lananh93159-boop/paste2md#readme"
+}
